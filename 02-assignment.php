@@ -23,7 +23,7 @@ $c = $b;      // Assignment shares memory value in memory, refcount++
 xdebug_debug_zval('a', 'b', 'c');
 
 // Altering one of the variables.
-echo "\n\nChanging on of the variables will copy the value on write.\n";
+echo "\n\nChanging one of the variables will copy the value on write.\n";
 $b = 'Space';
 
 xdebug_debug_zval('a', 'b', 'c');
