@@ -25,7 +25,7 @@ function familyTree() {
   getMemoryUsage();
 }
 
-// Fix 1: Create a dereferencing method
+// Fix 1: Create a dereferencing method (not the same thing as __destruct)
 // class Person {
 //   public $child;
 //   public $parent;
@@ -33,7 +33,7 @@ function familyTree() {
 //   public function __construct() {
 //     $this->data = range(1, 10000);
 //   }
-//   function __destruct() {
+//   function removeRefs() {
 //     $this->child = NULL;
 //     $this->parent = NULL;
 //   }
