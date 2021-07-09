@@ -3,7 +3,7 @@ recipe: lamp
 services:
   appserver:
     type: php:5.6
-    webroot: web
+    webroot: .
     xdebug: true
     config:
       php: .vscode/php.ini
