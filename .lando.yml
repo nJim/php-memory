@@ -1,0 +1,9 @@
+name: php-sandbox
+recipe: lamp
+services:
+  appserver:
+    type: php:5.6
+    webroot: web
+    xdebug: true
+    config:
+      php: .vscode/php.ini
